@@ -30,7 +30,8 @@ for llave in diccionario:           # con el ciclo for solo nos permite acceder 
     print(llave)                    # Para acceder al valor debemos hacer con una función
 
 print("-----------------------------------")
-                                    
+
+# ACCEDER A LOS ELEMENTOS DE UNA DICCIONARIO CON LA FUNCIÓN items                                    
 for llave, valor in diccionario.items():    # de la siguiente manera
     print(llave, valor)
 print("-----------------------------------")
@@ -67,3 +68,4 @@ print("-----------------------------------")
 
 # Eliminar el diccionario
 del diccionario 
+
