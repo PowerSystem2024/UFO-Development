@@ -1,4 +1,4 @@
-// Ciclo while
+// CICLO WHILE
 // En el ciclo while primero se revisa la condición y luego se ejecuta lo que está dentro del ciclo{}
 
 console.log('EJECUCIÓN DEL CÓDIGO') // AGREGAMOS UN PRINT POR CONSOLA PARA INDICAR CADA VEZ QUE EJECUTO EL CÓDIGO
@@ -10,7 +10,7 @@ while(contador < 3){
 }
 console.log('Fin del ciclo while');
 
-//do while
+//CICLO DO WHILE
 // En el ciclo do while primero se ejecuta lo que está dentro del ciclo{} y luego se revisa la condición
 let conteo = 0;
 do{
@@ -19,7 +19,7 @@ do{
 }while(conteo < 3);             // condición
 console.log('Fin del ciclo do while');
 
-// for
+// CICLO FOR
 // A diferencia de los anteriores, en el ciclo for ya va a tener definidos el incremento o decremento del contador
 // al igual que la variable que se incrementa o decrementa.
 
@@ -28,7 +28,7 @@ for( let contando = 0; contando < 3 ; contando++ ){         // esta parte se ve 
 }
 console.log('Fin del ciclo for');
 
-// break
+// PALABRA RESERVADA BREAK
 for( let contando = 0; contando < 10; contando++ ){
     if(contando % 2 == 0){
         console.log(contando);  // Buscamos mostrar los numeros pares por eso calculamos el residuo de dividir por 2 mediante un cond. if
@@ -45,7 +45,7 @@ for( let contando = 0; contando < 10; contando++ ){
 }
 console.log('Se muestra solo la primera ejecución del código y luego el break rompe cualquiera sea la estructura');   // Finalizando así el ciclo for
 
-// La palabra continue y Etiquetas Labels
+// PALABRA RESERVADA CONTINUE Y ETIQUETAS LABELS
 inicio:
 for( let contando = 0; contando <= 10; contando++ ){
     if(contando % 2 !== 0){
