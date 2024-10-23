@@ -1,5 +1,4 @@
-# UFO-Development
-Grupo N°14 de la Tecnicatura en Programacion UTN San Rafael Mendoza
+Repositorio para el segundo semestre. Soy Lopez Roberto Jose, estudiante de la Tec. en Programación UTN  del Grupo **"UFO-Development"**.
 
 ## Miembros: 
 
