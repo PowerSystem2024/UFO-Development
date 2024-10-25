@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="./assets/ROJO.ico" type="image/x-icon" />
+  </head>
+  <body class="scroll">
+    <header class="encabezado">
+      <nav class="navegacion">
+        <a class="navegacion__enlace" href="#presentacion">
+          <h2 class="navegacion__titulo">Portfolio personal</h2>
+        </a>
+        <ul class="enlaces">
+          <li class="enlaces__item">
+            <a class="enlaces__enlace" href="#presentacion">Inicio</a>
+          </li>
+          <li class="enlaces__item">
+            <a class="enlaces__enlace" href="#sobre-mi">Sobre mi</a>
+          </li>
+          <li class="enlaces__item">
+            <a class="enlaces__enlace" href="#proyectos">Proyectos</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main class="principal">
+      <section class="presentacion" id="presentacion">
+        <div class="presentacion__contenedor_info">
+          <h1 class="presentacion__titulo">Estudiante de Programacion</h1>
+          <p class="presentacion__parrafo">
+            Todo comenzo como un sueño y ahora se esta haciendo realdiad.
+          </p>
+          <div class="presentacion__contenedor_botones">
+            <a href="#sobre-mi" class="boton" role="button">Sobre mí</a>
+            <a
+              href="./assets/docs/cv.pdf"
+              target="_blank"
+              class="boton boton_oscuro"
+              role="button"
+              >Descargar CV</a
+            >
+          </div>
+        </div>
+      </section>
+      <article class="articulo sobre_mi" id="sobre-mi">
+        <h2 class="articulo__titulo">Un poco sobre mi</h2>
+        <div class="articulo__contenedor_descripciones">
+          <section class="seccion_descripcion">
+            <div class="seccion_descripcion__porta_retrato">
+              <img
+                class="seccion_descripcion__imagen"
+                src="./assets/images/profile/trabajo2.jpg"
+                alt="foto trabajando en la oficina"
+                title="trabajando en la oficina"
+              />
+            </div>
+            <div
+              class="seccion_descripcion__info scroll scroll_fino scroll_gris"
+              aria-label="descripcion personal"
+            >
+              <h3 class="seccion_descripcion__titulo" id="mi_historia_titulo">
+                Mi historia
+              </h3>
+              <p
+                class="seccion_descripcion__parrafo"
+                aria-label="Detalles de mi historia"
+                aria-describedby="mi_historia_titulo"
+              >
+                Soy un joven formoseño, esudiante de la tecnicatura en programacion.
+              </p>
+              <p
+                class="seccion_descripcion__parrafo"
+                aria-label="Detalles de mi historia"
+                aria-describedby="mi_historia_titulo"
+              >
+                Naci en una localidad llamada Clorinda en la provincia de Fsa.
+              </p>
+              <p
+                class="seccion_descripcion__parrafo"
+                aria-label="Detalles de mi historia"
+                aria-describedby="mi_historia_titulo"
+              >
+                Actualmente resido en la Provincia de Chaco, en una ciudad llamada Resistencia.
+              </p>
+              <p
+                class="seccion_descripcion__parrafo"
+                aria-label="Detalles de mi historia"
+                aria-describedby="mi_historia_titulo"
+              >
+                Me encuentro cursando el Primer año de la Tecnicatura en Progrmacion de la utn sede San Rafael.
+              </p>
+            </div>
+          </section>
+          <section class="seccion_descripcion">
+            <div
+              class="seccion_descripcion__info scroll scroll_fino scroll_gris"
+              aria-label="descripcion personal"
+            >
+              <h3 class="seccion_descripcion__titulo" id="mis_hobbies_titulo">
+                Mis hobbies
+              </h3>
+              <p
+                class="seccion_descripcion__parrafo"
+                aria-label="Detalles de mis hobbies"
+                aria-describedby="mis_hobbies_titulo"
+              >
+                En mis tiempos libres me gusta realizar distintas actividades, mencionare algunas de ellas.
+              </p>
+              <p
+                class="seccion_descripcion__parrafo"
+                aria-label="Detalles de mis hobbies"
+                aria-describedby="mis_hobbies_titulo"
+              >
+                En lo que es la naturaleza me gusta acampar y la pesca.
+              </p>
+              <p
+                class="seccion_descripcion__parrafo"
+                aria-label="Detalles de mis hobbies"
+                aria-describedby="mis_hobbies_titulo"
+              >
+                En cuanto al deporte realizo distitnas actividades, pero las que mas me gusta son Futbol y Paddel.
+              </p>
+            </div>
+            <div class="seccion_descripcion__porta_retrato">
+              <img
+                class="seccion_descripcion__imagen"
+                src="./assets/images/profile/trabajo3.jpg"
+                alt="foto mientras me encontraba en una reunion de trabajo"
+                title="selfie en una reunion"
+              />
+            </div>
+          </section>
+        </div>
+      </article>
+      <article class="articulo proyectos" id="proyectos">
+        <h2 class="articulo__titulo">Mis Proyectos</h2>
+        <div class="contenedor_tarjetas_grid">
+          <article
+            class="tarjeta"
+            aria-label="presentacion de proyecto personal"
+          >
+            <img
+              class="tarjeta__imagen"
+              src="./assets/images/proyectos/juegospreguntas.jpg"
+              alt="imagen del proyecto"
+              title="proyecto 1"
+            />
+            <div class="tarjeta__contenido">
+              <h3 class="tarjeta__titulo" id="titulo_proyecto_1">Proyecto Final de la Tecnicatura</h3>
+              <span class="tarjeta__divisor"></span>
+              <p
+                class="tarjeta__parrafo scroll scroll_fino"
+                aria-label="descripcion de proyecto personal"
+                aria-describedby="titulo_proyecto_1"
+              >
+                Se trata de un proyecto final en el cual realizamos un Juego de Preguntas y Puntuaciones con lo que seria mi grupo de trabajo en la Facultad.
+              </p>
+              <a href="#" class="boton boton_oscuro" target="_blank"
+                >Ver proyecto</a
+              >
+            </div>
+          </article>
+          <article
+            class="tarjeta"
+            aria-label="presentacion de proyecto personal"
+          >
+            <img
+              class="tarjeta__imagen"
+              src="./assets/images/proyectos/LOGO_vintage.jpg"
+              alt="imagen del proyecto"
+              title="proyecto 2"
+            />
+            <div class="tarjeta__contenido">
+              <h3 class="tarjeta__titulo" id="titulo_proyecto_2">Portfolio UFO-Development</h3>
+              <span class="tarjeta__divisor"></span>
+              <p
+                class="tarjeta__parrafo scroll scroll_fino scroll_gris"
+                aria-label="descripcion de proyecto personal"
+                aria-describedby="titulo_proyecto_2"
+              >
+                Se trata de la Pagina que creamos en la cual comentamos e informamos disntios proyectos del grupo.
+              </p>
+              <a href="https://ufodevelopment.netlify.app/" class="boton" target="_blank">Ver proyecto</a>
+            </div>
+          </article>
+          <article
+            class="tarjeta"
+            aria-label="presentacion de proyecto personal"
+          >
+            <img
+              class="tarjeta__imagen"
+              src="./assets/images/proyectos/git.jpg"
+              alt="imagen del proyecto"
+              title="proyecto 3"
+            />
+            <div class="tarjeta__contenido">
+              <h3 class="tarjeta__titulo" id="titulo_proyecto_3">Github</h3>
+              <span class="tarjeta__divisor"></span>
+              <p
+                class="tarjeta__parrafo scroll scroll_fino"
+                aria-label="descripcion de proyecto personal"
+                aria-describedby="titulo_proyecto_3"
+              >
+                Un material de lectura redactada por mi persona, para ayudar y facilitar a personas que estan comenzando en este mundo de la programacion como yo.
+              </p>
+              <a href="./assets/docs/Git.pdf" class="boton boton_oscuro" target="_blank"
+                >Ver proyecto</a
+              >
+            </div>
+          </article>
+          <article
+            class="tarjeta"
+            aria-label="presentacion de proyecto personal"
+          >
+            <img
+              class="tarjeta__imagen"
+              src="./assets/images/proyectos/Portafolio personal.jpg"
+              alt="imagen del proyecto"
+              title="proyecto 4"
+            />
+            <div class="tarjeta__contenido">
+              <h3 class="tarjeta__titulo" id="titulo_proyecto_4">Portafolio Personal</h3>
+              <span class="tarjeta__divisor"></span>
+              <p
+                class="tarjeta__parrafo scroll scroll_fino scroll_gris"
+                aria-label="descripcion de proyecto personal"
+                aria-describedby="titulo_proyecto_4"
+              >
+                Al igual que el protafolio grupal, realice el proyecto de mi portafolio personal.
+              </p>
+              <a href="#" class="boton" target="_blank">Ver proyecto</a>
+            </div>
+          </article>
+          <article
+            class="tarjeta"
+            aria-label="presentacion de proyecto personal"
+          >
+            <img
+              class="tarjeta__imagen"
+              src="./assets/images/proyectos/futuro.jpg"
+              alt="imagen del proyecto"
+              title="proyecto 5"
+            />
+            <div class="tarjeta__contenido">
+              <h3 class="tarjeta__titulo" id="titulo_proyecto_5">Proyectos futuros</h3>
+              <span class="tarjeta__divisor"></span>
+              <p
+                class="tarjeta__parrafo scroll scroll_fino"
+                aria-label="descripcion de proyecto personal"
+                aria-describedby="titulo_proyecto_5"
+              >
+                Aqui dejo el espacio para los proyectos futuros
+              </p>
+              <a href="#" class="boton boton_oscuro" target="_blank"
+                >Ver proyecto</a
+              >
+            </div>
+          </article>
+        </div>
+      </article>
+    </main>
+    <footer class="pie_de_pagina" role="contentinfo">
+      <div class="pie_de_pagina__columna">
+        <h4 class="pie_de_pagina__titulo_columna">Mis redes</h4>
+        <ul class="enlaces enlaces_redes">
+          <li class="enlaces__item">
+            <a
+              class="enlaces__enlace enlaces__enlace_footer"
+              href="https://github.com/Roberto-JLopez"
+              target="_blank"
+              ><img
+                class="enlaces__icono"
+                src="./assets/images/logos/github-logo.png"
+                alt="logo de github"
+                title="github"
+            /></a>
+          </li>
+          <li class="enlaces__item">
+            <a
+              class="enlaces__enlace enlaces__enlace_footer"
+              href="https://www.instagram.com/rober.lopez1105/"
+              target="_blank"
+            >
+              <img
+                class="enlaces__icono"
+                src="./assets/images/logos/ig-logo.png"
+                alt="logo de instagram"
+                title="instagram"
+              />
+            </a>
+          </li>
+          <li class="enlaces__item">
+            <a
+              class="enlaces__enlace enlaces__enlace_footer"
+              href="https://x.com/chinoL1105"
+              target="_blank"
+              ><img
+                class="enlaces__icono"
+                src="./assets/images/logos/x-logo.png"
+                alt="logo de X"
+                title="X"
+            /></a>
+          </li>
+        </ul>
+      </div>
+      <div class="pie_de_pagina__columna">
+        <h4 class="pie_de_pagina__titulo_columna">Contactame</h4>
+        <ul class="enlaces enlaces_vertical">
+          <li class="enlaces__item">
+            <a
+              class="enlaces__enlace enlaces__enlace_footer"
+              href="mailto:Roberlopez1105@gmail.com"
+              target="_blank"
+              >Mail: Roberlopez1105@gmail.com</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="pie_de_pagina__columna" role="navigation">
+        <h4 class="pie_de_pagina__titulo_columna">Secciones</h4>
+        <ul class="enlaces enlaces_vertical">
+          <li class="enlaces__item">
+            <a
+              class="enlaces__enlace enlaces__enlace_footer"
+              href="#presentacion"
+              >Inicio</a
+            >
+          </li>
+          <li class="enlaces__item">
+            <a class="enlaces__enlace enlaces__enlace_footer" href="#sobre-mi"
+              >Sobre mi</a
+            >
+          </li>
+          <li class="enlaces__item">
+            <a class="enlaces__enlace enlaces__enlace_footer" href="#proyectos"
+              >Proyectos</a
+            >
+          </li>
+        </ul>
+      </div>
+      <div class="pie_de_pagina__copyright">
+        <p>©️Copyright 2024</p>
+      </div>
+    </footer>
+  </body>
+</html>
