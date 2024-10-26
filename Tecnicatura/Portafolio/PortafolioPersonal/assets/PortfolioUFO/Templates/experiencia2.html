@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Experiencia 2</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+
+<body class="body-exp2">
+  <div class="container2">
+    <header>
+      <h1>SISTEMA TELEMÉDICO DE ELECTROCARDIOGRAFÍA
+        BASADO EN INTERNET EMBEBIDO</h1>
+    </header>
+    <main>
+      <p>Se describe un Sistema Telemédico de Electrocardiografía vía Internet
+        totalmente comunicante. El sistema esta compuesto de un módulo de adquisición de datos
+        médicos, un módulo de Internet Embebido que permite la transmisión directamente a una
+        Intranet o Internet de los datos médicos adquiridos y estaciones local y central basadas en la
+        arquitectura PC donde corren clientes para monitorizar las señales. El uso del protocolo
+        TCP/IP y la arquitectura cliente/servidor en esta aplicación telemédica, permite explotar al
+        máximo la flexibilidad y alcance de Internet.</p>
+
+      <h2>Telemonitoreo</h2>
+
+      <p>Los servicios telemédicos de monitoreo remoto consisten en la adquisición de los
+        datos médicos, su análisis por especialistas, la toma de decisiones y la guía en la aplicación
+        de las terapias adecuadas. A diferencia del ambiente clínico estándar, en el caso telemédico,
+        los análisis de los datos y las tomas de decisiones pueden ser hechas a distancia y en
+        muchos casos podrían involucrar el uso de procedimientos automatizados basados en
+        sistemas expertos.
+      </p>
+      <p>Existe una gran cantidad de aplicaciones para monitorear a un paciente, tanto para
+        ambientes clínicos como no-clínicos. Entre otras cosas, en la gran mayoría de los casos se
+        requerirá una medición de signos vitales de la persona. Entre los signos vitales más
+        frecuentemente usados para monitorizar se cuentan: electrocardiografía (ECG), frecuencia
+        respiratoria y función pulmonar, saturación de oxígeno arterial, pulso cardíaco, presión
+        sanguínea no-invasiva o invasiva, concentración y presión parcial de CO2, temperatura,
+        peso corporal, sonidos cardíacos, gasto cardíaco, glucosa en sangre, PH sanguíneo, etc. En
+        este proyecto se considera solamente el monitoreo de electrocardiogramas dentro de un ambiente clínico como
+        podría ser una Unidad de Cuidados Intensivos (UCI), un consultorio
+        cardiológico, un cuarto en una sala de cuidados generales, una sala de emergencia y hasta
+        una ambulancia. La idea es estudiar el problema e implementar algunos de los elementos
+        básicos que forman esta aplicación, tanto en hardware, firmware y software. Sin embargo,
+        existe un interés en extender los resultados a ambientes más generales como hogares,
+        centros de trabajo, ancianatos, etc., incluso hasta el monitoreo continuo de pacientes.
+      </p>
+
+      <h2>Sistemas de Telemonitorización vía Internet</h2>
+
+      <p>Los sistemas telemédicos para monitorización de pacientes vía Internet se basan
+        típicamente en instrumentación virtual realizada alrededor de arquitecturas PC. Esta
+        configuración basada en equipos comerciales permite actualizar el sistema fácilmente, tanto
+        en software como en hardware, siguiendo los avances de la tecnología. En la figura 1,
+        podemos observar que los sistemas en el caso más general (Wide Area Network, WAN)
+        comprenden:</p>
+
+      <ol>
+        <li>Los módulos de adquisición de datos portátiles (MAD) en conexión directa con los
+          pacientes. Estos se pueden conectar a través de interfaces seriales (RS232/RS485, USB,
+          IrDA, RF) o interfaces paralelas (RAM de dos puertos, DPRAM).</li>
+
+        <li>Los dispositivos (PC, PDA, OEM PC, Internet Embebido) que conectan los MAD a una
+          Intranet o Internet. El conjunto será denominado eMAD (MAD embebido)</li>
+
+        <li>Estaciones de monitoreo locales (cerca del paciente), centrales (para monitorear varios
+          pacientes a la vez), remotas (para monitorear pacientes a distancia) y servidores (para
+          manejar base de datos y procesamiento de las mismas para diagnóstico y como base de
+          sistemas expertos), que conforman la distribución de inteligencia a lo largo del sistema
+          telemédico.</li>
+
+        <li>Los respectivos protocolos de comunicación entre los MAD y los dispositivos que
+          permiten una conexión con Internet y entre las computadoras locales, centrales, remotas
+          y servidores.</li>
+
+        <li>Dispositivos de red configurados como Gateways para enrutamiento, encriptamiento,
+          autentificación, firewalls, mirroring, etc.</li>
+
+        <li>Programas Cliente/Servidor que soportan las diferentes aplicaciones y las interfaces
+          hombre-máquina, bajo los estándares de los navegadores (Browsers) o aplicaciones en
+          Java o C++ utilizando sockets.</li>
+      </ol>
+      <p>Por conveniencia se pueden considerar tres tipos de subsistemas del lado del
+        paciente: los que utilizan Internet Embebido, los que utilizan Asistentes Digitales
+        Personales (PDA) y los que utilizan Computadoras Personales (PC). Los primeros son
+        útiles cuando del lado del paciente no se requiere supervisión y acceso a utilidades locales
+        como es en el caso de aplicaciones no-clínicas para el seguimiento de pacientes
+        remotamente, o en cuando se dispone de una Intranet en el hospital o consultorio. Los
+        segundos tienen un nivel relativamente bajo de interfaz hombre-máquina ya que los PDA
+        tienen limitado su desempeño y pueden soportar aplicaciones donde se requiera una
+        interacción mínima con la aplicación local como en el caso de ambulancias, ambulatorios y
+        consultorios [1],[2]. Los terceros permiten el máximo de prestaciones locales para
+        aplicaciones completas donde se puede contar hasta con herramientas como audio y vídeo
+        bidireccionales [3].
+      </p>
+
+      <center>
+        <img src="/Images/Sin título.png" alt="Circuito de comunicación" >
+      </center>
+
+      <p>No pretendemos profundizar mucho en el tema sino dar un paneo rápido por lo que dejamos hasta aquí el contenido y estamos
+        listos para recibir sus consultas
+      </p>
+
+
+
+
+      <a href="./index.html"><strong>Volver al Inicio</strong></a>
+    </main>
+  </div>
+</body>
+
+</html>
