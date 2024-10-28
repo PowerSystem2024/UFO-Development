@@ -721,7 +721,7 @@ La cabecera o HEAD representan la rama y el commit de esa rama donde estamos tra
 <sub>
 Repasa: ¿Qué es Git?</sub>
 <sub>
-Cómo funcionan las ramas en GIT<sub>
+Cómo funcionan las ramas en GIT</sub>
 <sub>
 Las ramas son la manera de hacer cambios en nuestro proyecto sin afectar el flujo de trabajo de la rama principal. Esto porque queremos trabajar una parte muy específica de la aplicación o simplemente experimentar.
 </sub>
