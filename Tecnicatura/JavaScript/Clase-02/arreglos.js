@@ -1,33 +1,32 @@
-//Trabajar con arrglos
+//Creación de  Array o arreglos
+//let autos = new Array("Ferrari", "Renault", "BMW") ;esta es la sintaxis vieja
 
-//Sintaxis antigua
-//let autos = new Array("Ferrari", "Renault", "BMW")
-
-//Sintaxis actual
-const autos = ["Ferrari", "Renault", "BMW"];
+const autos = ['Ferrari', 'Renault', 'BMW']; //Sintaxis actual
 console.log(autos);
 
-//Recorremos los elementos de un array
+//Recorremos los elementos de un array (en forma manual)
 console.log(autos[0]);
+console.log(autos[2])
 
-for (let index = 0; index < autos.length; index++) {
-  console.log(index + " : " + autos[index]);
-}
+//si queremos recorrer tenemos que añadir un ciclo
+for (let i = 0; i < autos.length; i++) {
+  console.log(i + " : " + autos[i]);
+}// + " : " +  es para concatenar 
 
 //Modificar los elementos del array
-autos[1] = "Volvo";
+autos[1] = 'Volvo';
 console.log(autos[1]);
 
 //Agregar nuevos valores al array
-autos.push("Audi"); //Con el metodo ".push()" agregamos un elemento al final
+autos.push('Audi'); //Con el metodo ".push()" agregamos un elemento al final
 console.log(autos);
 
 //Otras formas de agregar elementos al array
-autos[autos.length] = "Porsche";
+autos[autos.length] = 'Porsche';
 console.log(autos);
 
-//Otra forma mas de agregar elementos (Teniendo cuidado)
-autos[6] = "Fiat";
+//Otra forma mas de agregar elementos teniendo cuidado.
+autos[6] = 'Renault';
 console.log(autos);
 
 //Como preguntar si es un array
