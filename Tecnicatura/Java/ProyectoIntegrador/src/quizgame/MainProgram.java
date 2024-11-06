@@ -75,9 +75,14 @@ public class MainProgram {
                 Python python = new Python();
                 python.startQuiz();
             }
+            case 2 -> {
+                Java java = new Java();
+                java.startQuiz();
+            }
             
             default -> System.out.println("Tema no disponible. Seleccione una opción válida.");
         }
+
         // Aquí puedes añadir otros casos para cada tema
             }
 
