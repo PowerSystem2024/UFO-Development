@@ -1453,38 +1453,238 @@ Del otro lado, el usuario invitado solo debe aceptar la invitación y ya podrá 
 <sub>
  Git Tags y Versiones en GitHub</sub>
 <sub>
-¿Qué son los Git Tags?</sub>
-<sub>
-Son etiquetas que se asignan a commits específicos en un repositorio Git. Estas etiquetas sirven como marcadores para identificar versiones importantes del proyecto, como releases, puntos de referencia o cualquier otro momento significativo.</sub> 
-<sub>
-¿Por qué usar Git Tags?</sub> 
-<sub>
-
-<sub>
-Facilitar la navegación: Permiten encontrar rápidamente un commit específico.
-Gestionar versiones: Ayudan a rastrear los cambios a lo largo del tiempo.
-Identificar releases: Señalizan las versiones del proyecto que se lanzan al público.</sub> 
+En Git, las etiquetas o Git tags tienen un papel importante al asignar versiones a los commits más significativos de un proyecto. Aprender a utilizar el comando git tag, entender los diferentes tipos de etiquetas, cómo crearlas, eliminarlas y compartirlas, es esencial para un flujo de trabajo eficiente.
+</sub> 
+ 
 <sub>
 Creación de Etiquetas en Git</sub>
-<sub>
-Para crear una nueva etiqueta en el commit actual, utiliza el siguiente comando:
-</sub> 
 
-![alt text](image.png)
-
-```bash
+```sh
 git tag
 
-Sustituye con un identificador semántico que refleje el estado del repositorio en ese momento. Git admite dos tipos de etiquetas:
+```
+
+<sub>Sustituye con un identificador semántico que refleje el estado del repositorio en ese momento. Git admite dos tipos de etiquetas:
 
 . Etiquetas anotadas: almacenan información adicional como la fecha, el etiquetador y el correo electrónico. Son ideales para publicaciones públicas.
 
-. Etiquetas ligeras: más simples, utilizadas como "marcadores" de una confirmación específica.
+. Etiquetas ligeras: más simples, utilizadas como "marcadores" de una confirmación específica.</sub>
+<sub>
+Listado de etiquetas</sub>
+<sub>Para obtener una lista de etiquetas en el repositorio, ejecuta el siguiente comando:</sub>
 
-Listado de etiquetas
-Para obtener una lista de las etiquetas en el repositorio, ejecuta:
+![alt text](Tagging.png)
 
+Para crear una etiqueta, ejecuta el siguiente comando:
+
+<sub>Las etiquetas anotadas almacenan información adicional como la fecha, etiquetador y correo electrónico, y son ideales para publicaciones públicas. Las etiquetas ligeras son más simples y se emplean como “marcadores” de una confirmación específica.</sub>
+
+```ssh
 git tag
+```## Portafolio
+
+Creando una línea de tiempo para la section Educación - Cursos
+
+# CLASE 07 MIÉRCOLES 25 DE SEPTIEMBRE DEL 2024 - Portafolio 7
+
+## Error con los tags
+
+<sub>Investigación: Si un tag es imposible generarlo dos veces ¿Cómo es que existe el error de dos tags con el mismo nombre?¿Cómo se origina este problema o error?</sub>
+
+<sub>Las situaciones que pueden dar lugar a errores que parecen indicar que hay dos tags con el mismo nombre pueden ser:</sub>
+**_ 1.Tags locales y remotos: Puedes tener un tag con un nombre en tu repositorio local y, si alguien más crea un tag con el mismo nombre en el repositorio remoto, al intentar hacer un “git fetch” o “git pull”, podrías encontrarte con un conflicto o error, especialmente si no estás al tanto de la creación de ese tag en el remoto._**
+
+**_ 2. Reescritura de la historia: Si has reescrito la historia de tu repositorio (por ejemplo, utilizando “git rebase” o “git commit –amend”), puedes terminar en situaciones en las que, al crear un nuevo tag, parezca que hay dos tags con el mismo nombre, aunque realmente estén apuntando a diferentes commits._**
+
+**_ 3. Eliminación y recreación: Si se elimina un tag y luego se vuelve a crear con el mismo nombre, y si no se realiza un “git push –tags” después de la eliminación, puede haber confusiones, especialmente en repositorios colaborativos._**
+
+**_ 4. Error de sincronización: En entornos donde varios desarrolladores están trabajando, puede haber problemas de sincronización que causen la aparición de tags duplicados._**
+
+<sub>-Para resolver el conflicto relacionado con la creación de tags duplicados hay que seguir estos pasos y comandos:</sub>
+
+**1. Verificar los tags existentes**
+Primero, verifica los tags que ya existen en tu repositorio para confirmar si efectivamente hay duplicados.
+
+```sh
+git tag –l
+```
+
+**2. Eliminar el tag duplicado**
+Si encuentras un tag que deseas eliminar, puedes hacerlo utilizando el siguiente comando. Asegúrate de saber qué tag deseas mantener.
+
+```sh
+git tag -d nombre_del_tag
+```
+
+Si el tag ya ha sido enviado a un repositorio remoto, también deberías eliminarlo del remoto:
+
+```sh
+git push origin --delete nombre_del_tag
+```
+
+**3. Crear un nuevo tag (si es necesario)**
+Si necesitas crear un nuevo tag después de eliminar el duplicado, puedes hacerlo con:
+
+```sh
+git tag -a nombre_del_tag -m "Mensaje del tag"
+```
+
+Esto crea un tag anotado. Si solo deseas un tag ligero, puedes omitir la opción `-a` y el mensaje:
+
+```sh
+git tag nombre_del_tag
+```
+
+**4. Enviar el tag al remoto**
+Después de crear el tag, asegúrate de enviarlo al repositorio remoto:
+
+```sh
+git push origin nombre_del_tag
+```
+
+**5. Verificar la eliminación y creación**
+Verifica nuevamente los tags en tu repositorio local y remoto para asegurarte de que todo esté correcto.
+Para listar los tags locales:
+
+```sh
+git tag -l
+```
+
+Para listar los tags remotos:
+
+```sh
+git ls-remote --tags origin
+```
+
+## Portafolio
+
+Creando la seccion experiencia
+
+# CLASE 08 MIÉRCOLES 2 DE OCTUBRE DEL 2024 - Portafolio 8
+
+## Manejo de ramas en GitHub
+
+Si no te funciona el comando gitk es posible no lo tengas instalado por defecto.
+Para instalar gitk debemos ejecutar los siguientes comandos:
+
+```sh
+
+  sudo apt-get update
+
+  sudo apt-get install gitk
+```
+
+Repasa: ¿Qué es Git?
+
+Las ramas nos permiten hacer cambios a nuestros archivos sin modificar la versión principal (main). Puedes trabajar con ramas que nunca envías a GitHub, así como pueden haber ramas importantes en GitHub que nunca usas en el repositorio local. Lo crucial es que aprendas a manejarlas para trabajar profesionalmente.
+
+Si, estando en otra rama, modificamos los archivos y hacemos commit, tanto el historial(git log) como los archivos serán afectados. La ventaja que tiene usar ramas es que las modificaciones solo afectarán a esa rama en particular. Si luego de “guardar” los archivos(usando commit) nos movemos a otra rama (git checkout otraRama) veremos como las modificaciones de la rama pasada no aparecen en la otraRama.
+
+Comandos para manejo de ramas en GitHub
+Crear una rama:
+
+```sh
+git branch branchName #Crear una rama
+git checkout branchName #Movernos a otra rama
+git checkout -b nombre-de-la-rama #Crear una rama en el repositorio local
+git push origin nombre-de-la-rama #Publicar una rama local al repositorio remoto
+```
+
+Recuerda que podemos ver gráficamente nuestro entorno y flujo de trabajo local con Git utilizando el comando gitk. Gitk fue el primer visor gráfico que se desarrolló para ver de manera gráfica el historial de un repositorio de Git.
+
+## Portafolio
+
+Creando la galeria de Proyectos
+
+# CLASE 09 MIÉRCOLES 9 DE OCTUBRE DEL 2024 - Portafolio 9
+
+## Configurar múltiples colaboradores en un repositorio de GitHub
+
+Por defecto, cualquier persona puede clonar o descargar tu proyecto desde GitHub, pero no pueden crear commits, ni ramas. Esto quiere decir que pueden copiar tu proyecto pero no colaborar con él, si este es publico, de otra manera, osea, si es privado es necesario que realmente estes haciendo una invitación, sino no lo van a poder ver. Existen varias formas de solucionar esto para poder aceptar contribuciones. Una de ellas es añadir a cada persona de nuestro equipo como colaborador de nuestro repositorio.
+
+> Cómo agregar colaboradores en Github
+> Solo debemos entrar a la configuración de colaboradores de nuestro proyecto. Se encuentra en:
+> Repositorio > Settings > Collaborators
+> Ahí, debemos añadir el email o username de los nuevos colaboradores.
+
+> Si, como colaborador, agregaste erróneamente el mensaje del commit, lo puedes cambiar de la siguiente manera:
+
+> Hacer un commit con el nuevo mensaje que queremos, esto nos abre el editor de texto de la terminal:
+
+```sh
+
+git commit —amend #Corregimos el mensaje
+git pull origin main #Traer el repositorio remoto
+git push --set-upstream origin main #Ejecutar el cambio, el error arreglado
+```
+
+> Comienzo del colaborador
+
+```sh
+cd Documentos #Abre git bash
+mkdir class-git #Crea la carpeta o directorio de trabajo
+ls -al #Revisa lo que va haciendo, los archivos o directorios que tiene
+# 1. No debe hacer un git init, debe buscar el repositorio en el cual esta invitado a participar, por supuesto en GitHub.
+# 2. Pasa a clonar desde HTTPS, copiar la url, esto es porque no se arranca el proyecto desde cero, se esta uniendo otro colaborador.
+# 3. En git bash ponemos el siguiente comando.
+git clone url-copiada-github #Esto hace que clonemos el repositorio
+# 4. No pide ni usuario ni contraseña si el repositorio es publico.
+code . #Abre VSC y comienza con cambios, o abre el siguiente comando para hacer modificaciones
+vim historia.txt #Vamos a escribir: Aquí esta un nuevo colaborador
+vim escribimos el mensaje del commit #Esto en Ubuntu
+ctrl + x
+s #Para un si
+enter #Terminado el mensaje del commit
+vim escribimos el mensaje del commit #Esto en git bash window
+esc #Presionamos escaner luego de terminar de escribir
+:wq! #Para salir del editor vim en window
+git status
+git commit -am "Mi primer commit, estoy muy emocionado!!!"
+git pull origin main
+git fetch
+gti branch #Para ver las ramas que se trajo, no se trae sino solo main, si hay mas debes crearlas local
+git log #Para ver toda las historia
+git log --graph #Vemos el grafico de las diferentes ramas y del commit que acabamos de hacer que esta en el main, Git es una base de datos de toda las historia de todo lo que se ha hecho
+git push origin main #Va a pedir un email que será el del colaborador, su contraseña.
+# 5. Nos trae un denegado, ¿Por qué? Porque en el proceso de abordaje el jefe no le dio acceso: el dueño del repositorio no le agregó dandole acceso.
+# 6. Ir a settings del repositorio, veremos la opsión Collaborators, agregamos el correo o nombre de usuario: el colaborador debe tener un email publico y visible o de otra manera debera ser con el nombre de usuario publico: ingresar el username y debe ir como colaborador.
+# 7. Se puede enviar un email con la url, pero ya GitHub envia una notificación al usuario de invitado, es una cosa que debemos empezar a consultar y revisar.
+# 8. El colaborador debe aceptar la invitación, una vez hecho eso ya tendrá total acceso para hacer push al repositorio.
+git pull origin main
+git push origin main #Colocar nombre de usuario y contraseña, listo
+# 9. El dueño del repositorio no ve los cambios, ¿Qué hacer?
+git pull origin main
+git fetch
+git log --stat #Se verá claro que el colaborador ingreso su primer commit
+# 10. A partir de ahora el dueño del repositorio y el colaborador deberán repartir el trabajo, esto se hace con distintas ramas de trabajo: el dueño trabajará desde la rama header y el colaborador desde la rama footer, al final cuando se termine, se hara un merge para terminar el proyecto.
+```
+
+## Portafolio
+
+Capitulo 8: Creacion de Componente Habilidades.
+
+# CLASE 10 MIÉRCOLES 16 DE OCTUBRE DEL 2024 - Portafolio 10
+
+**Flujo de trabajo profesional**
+
+**Haciendo merge de ramas de desarrollo a main**
+
+> Para poder desarrollar software de manera óptima y ordenada, necesitamos tener un flujo de trabajo profesional, que nos permita trabajar en conjunto sin interrumpir el trabajo de otros desarrolladores.
+
+> Una buena práctica de flujo de trabajo sería la siguiente:
+
+### Crear ramas
+
+<sub>Asignar una rama a cada programador</sub>
+<sub>El programador baja el repositorio con git pull origin master</sub>
+<sub>El programador cambia de rama</sub>
+<sub>El programador trabaja en esa rama y hace commits</sub>
+<sub>El programador sube su trabajo con git push origin #nombre_rama</sub>
+<sub>El encargado de organizar el proyecto baja, revisa y unifica todos los cambios</sub>
+
+## PORTAFOLIO
+
+<sub>Capitulo 9: Creacion de componente Intereses y creación del footer.</sub>
 
 Esto mostrará una lista de las etiquetas existentes, como:
 
@@ -1513,4 +1713,13 @@ Resumen:
 
 . Las etiquetas en Git son esenciales para asignar versiones y capturar instantáneas importantes en el historial de un proyecto. Aprender a crear, listar, compartir y eliminar etiquetas mejorará significativamente tu flujo de trabajo con Git.
 
-```
+
+# CLASE 11 MIÉRCOLES 23 DE OCTUBRE DEL 2024 - Portafolio 11
+
+<sub>Flujo de trabajo profesional -> Archivos binarios
+
+Las imagenes cargandolas en el repositorio, representan un problema: porque las imagenes son pesadas, y si la subimos al repositorio, siempre que hagamos cambios, vamos a estar trayendo la imagen siempre, estas imagenes son binarios para GitHub, mientras mas binarios carguemos, más pesado va a ser el repositorio, algo que no es parte de las buenas practicas.
+
+
+Otra cosa muy importante a tener en cuenta, es que en cada commit que hagamos hay un tamaño predefinido para la carga, este no lo podemos superar o no podremos subir los commits, el tamaño es 100 mb, si acoplamos un archivo binario en un commit que pese mas de esto, será un problema, no nos dejará seguir commiteando, porque siempre seguirá arrastrando el archivo binario.
+</sub>
