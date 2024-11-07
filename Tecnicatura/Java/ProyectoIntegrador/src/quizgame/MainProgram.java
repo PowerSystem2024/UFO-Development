@@ -80,6 +80,11 @@ public class MainProgram {
                 Java java = new Java();
                 java.startQuiz();
             }
+            case 3 -> {
+                JavaScript javascript = new JavaScript();
+                javascript.startQuiz();
+            }
+            
             
             default -> System.out.println("Tema no disponible. Seleccione una opción válida.");
         }
