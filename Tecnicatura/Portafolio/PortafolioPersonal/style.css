@@ -1,17 +1,19 @@
 :root {
   /* colors */
-  --texto-primario: #dddddd;
+  --texto-primario: #00d4a6;
   --texto-secundario: #d1d1d1;
   --fondo-primario: #0f0921;
+
   --fondo-primario-transparente: #0f092180;
   --fondo-secundario: #0a0c13;
-  --color-primario: #2c2acb;
-  --color-primario-apagado: #2422a3;
+  --color-primario: #000000;
+  --color-primario-apagado: #ffffff;
   --color-secundario: #9b70f9;
   --color-terciario: #6f6f6f;
 
   /* sizes */
   --presentacion-titulo-tamanio: 4rem;
+
   --presentacion-titulo-tamanio-grande: 3.4rem;
   --presentacion-descripcion-tamanio: 1.2rem;
   --titulo-tamanio: 3rem;
