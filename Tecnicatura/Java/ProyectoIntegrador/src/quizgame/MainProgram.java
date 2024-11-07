@@ -66,6 +66,7 @@ public class MainProgram {
         System.out.println("\u001B[32m" + "|  4: HTML                            |");
         System.out.println("\u001B[32m" + "|  5: CSS                             |");
         System.out.println("\u001B[32m" + "|  6: Vue                             |");
+        System.out.println("\u001B[32m" + "|  6: Vite                             |");
         System.out.println("\u001B[32m" + "+-------------------------------------+" + "\u001B[0m");
         System.out.print("Seleccione un tema: ");
         int topicChoice = scanner.nextInt();
