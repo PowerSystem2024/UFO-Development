@@ -73,7 +73,6 @@ public class JavaScript {
             startQuiz();
         } else {
             System.out.println("Regresando al menú principal...");
-            // No llamar a MainProgram.main(null), simplemente regresa al menú principal
         }
     }
 }

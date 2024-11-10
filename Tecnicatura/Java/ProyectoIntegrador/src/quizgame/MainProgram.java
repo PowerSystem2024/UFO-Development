@@ -66,7 +66,7 @@ public class MainProgram {
         System.out.println("\u001B[32m" + "|  4: HTML                            |");
         System.out.println("\u001B[32m" + "|  5: CSS                             |");
         System.out.println("\u001B[32m" + "|  6: Vue                             |");
-        System.out.println("\u001B[32m" + "|  6: Vite                             |");
+        System.out.println("\u001B[32m" + "|  7: Vite                             |");
         System.out.println("\u001B[32m" + "+-------------------------------------+" + "\u001B[0m");
         System.out.print("Seleccione un tema: ");
         int topicChoice = scanner.nextInt();
@@ -84,13 +84,25 @@ public class MainProgram {
                 JavaScript javascript = new JavaScript();
                 javascript.startQuiz();
             }
-            
-            
+            case 4 -> {
+                HTML html = new HTML();
+                html.startQuiz();
+            }
+            case 5 -> {
+                CSS css = new CSS();
+                css.startQuiz();
+            }
+            case 6 -> {
+                Vue vue = new Vue();
+                vue.startQuiz();
+            }
+            case 7 -> {
+                Vite vite = new Vite();
+                vite.startQuiz();
+            }
             default -> System.out.println("Tema no disponible. Seleccione una opción válida.");
         }
-
-        // Aquí puedes añadir otros casos para cada tema
-            }
+    }
 
     public static void mostrarMejoresJugadores() {
         System.out.println("\u001B[32m" + "+-------------------------------------+");

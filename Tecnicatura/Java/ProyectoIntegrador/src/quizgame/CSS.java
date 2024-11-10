@@ -2,7 +2,7 @@ package quizgame;
 
 import java.util.Scanner;
 
-public class Python {
+public class CSS {
     public void startQuiz() {
         Scanner scanner = new Scanner(System.in);
         int respuestasCorrectas = 0;
@@ -11,45 +11,45 @@ public class Python {
         System.out.print("Ingrese su nombre: ");
         String playerName = scanner.nextLine();
 
-        System.out.println("\nTema: Python - Responde las siguientes preguntas:");
+        System.out.println("\nTema: CSS - Responde las siguientes preguntas:");
 
         // Pregunta 1
-        System.out.println("1. ¿Qué es Python?");
-        System.out.println("a) Un lenguaje de programación");
-        System.out.println("b) Un sistema operativo");
-        System.out.println("c) Un navegador web");
-        System.out.println("d) Un editor de texto");
+        System.out.println("1. ¿Qué significa CSS?");
+        System.out.println("a) Computer Style Sheets");
+        System.out.println("b) Creative Style Sheets");
+        System.out.println("c) Cascading Style Sheets");
+        System.out.println("d) Colorful Style Sheets");
         System.out.print("Respuesta: ");
         String answer1 = scanner.next();
-        if (answer1.equalsIgnoreCase("a")) {
+        if (answer1.equalsIgnoreCase("c")) {
             respuestasCorrectas++;
         } else {
             respuestasIncorrectas++;
         }
 
         // Pregunta 2
-        System.out.println("2. ¿Quién creó Python?");
-        System.out.println("a) James Gosling");
-        System.out.println("b) Guido van Rossum");
-        System.out.println("c) Brendan Eich");
-        System.out.println("d) Tim Berners-Lee");
+        System.out.println("2. ¿Qué propiedad de CSS se utiliza para cambiar el color de fondo?");
+        System.out.println("a) background-color");
+        System.out.println("b) color");
+        System.out.println("c) bg-color");
+        System.out.println("d) background");
         System.out.print("Respuesta: ");
         String answer2 = scanner.next();
-        if (answer2.equalsIgnoreCase("b")) {
+        if (answer2.equalsIgnoreCase("a")) {
             respuestasCorrectas++;
         } else {
             respuestasIncorrectas++;
         }
 
         // Pregunta 3
-        System.out.println("3. ¿Cuál es la extensión de archivos para Python?");
-        System.out.println("a) .java");
-        System.out.println("b) .py");
-        System.out.println("c) .html");
-        System.out.println("d) .css");
+        System.out.println("3. ¿Cuál de las siguientes opciones es una unidad de medida relativa en CSS?");
+        System.out.println("a) px");
+        System.out.println("b) cm");
+        System.out.println("c) em");
+        System.out.println("d) mm");
         System.out.print("Respuesta: ");
         String answer3 = scanner.next();
-        if (answer3.equalsIgnoreCase("b")) {
+        if (answer3.equalsIgnoreCase("c")) {
             respuestasCorrectas++;
         } else {
             respuestasIncorrectas++;
