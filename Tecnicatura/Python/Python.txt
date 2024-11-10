@@ -1,0 +1,13 @@
+Organización de archivos:
+Los ejercicios de cada video de las clases se organizan en carpetas o sueltos dentro
+de un mismo archivo el cual contiene todos los ejercicios de ésa clase.
+Puede darse el caso de que hayan carpetas repetidas por cada integrante del grupo
+dentro de cada una de las clases como es el caso de Clase02 y Clase02bis. Estas carpetas
+contienen los mismos ejercicios correspondientes a la clase 02 de pytnoy pero están echas por 
+distintos integrantes del grupo de manera que cada uno pueda hacer los ejercicios y subirlos 
+para el aprendizaje en conjunto.
+(ESTE ESCRITO PUEDE MODIFICARSE!)
+
+[] listas
+() Tuplas
+{} Diccionarios
