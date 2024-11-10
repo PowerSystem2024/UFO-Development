@@ -2,7 +2,7 @@ package quizgame;
 
 import java.util.Scanner;
 
-public class Python {
+public class Vite {
     public void startQuiz() {
         Scanner scanner = new Scanner(System.in);
         int respuestasCorrectas = 0;
@@ -11,14 +11,14 @@ public class Python {
         System.out.print("Ingrese su nombre: ");
         String playerName = scanner.nextLine();
 
-        System.out.println("\nTema: Python - Responde las siguientes preguntas:");
+        System.out.println("\nTema: Vite - Responde las siguientes preguntas:");
 
         // Pregunta 1
-        System.out.println("1. ¿Qué es Python?");
-        System.out.println("a) Un lenguaje de programación");
-        System.out.println("b) Un sistema operativo");
-        System.out.println("c) Un navegador web");
-        System.out.println("d) Un editor de texto");
+        System.out.println("1. ¿Qué es Vite?");
+        System.out.println("a) Un empaquetador de módulos");
+        System.out.println("b) Un framework CSS");
+        System.out.println("c) Un lenguaje de programación");
+        System.out.println("d) Un navegador web");
         System.out.print("Respuesta: ");
         String answer1 = scanner.next();
         if (answer1.equalsIgnoreCase("a")) {
@@ -28,25 +28,25 @@ public class Python {
         }
 
         // Pregunta 2
-        System.out.println("2. ¿Quién creó Python?");
-        System.out.println("a) James Gosling");
+        System.out.println("2. ¿Quién es el creador de Vite?");
+        System.out.println("a) Evan You");
         System.out.println("b) Guido van Rossum");
-        System.out.println("c) Brendan Eich");
-        System.out.println("d) Tim Berners-Lee");
+        System.out.println("c) Ryan Dahl");
+        System.out.println("d) Brendan Eich");
         System.out.print("Respuesta: ");
         String answer2 = scanner.next();
-        if (answer2.equalsIgnoreCase("b")) {
+        if (answer2.equalsIgnoreCase("a")) {
             respuestasCorrectas++;
         } else {
             respuestasIncorrectas++;
         }
 
         // Pregunta 3
-        System.out.println("3. ¿Cuál es la extensión de archivos para Python?");
-        System.out.println("a) .java");
-        System.out.println("b) .py");
-        System.out.println("c) .html");
-        System.out.println("d) .css");
+        System.out.println("3. ¿Cuál de las siguientes es una característica principal de Vite?");
+        System.out.println("a) Carga lenta de módulos");
+        System.out.println("b) Recarga en caliente ultra rápida");
+        System.out.println("c) Emulación de bases de datos");
+        System.out.println("d) Motor de renderizado");
         System.out.print("Respuesta: ");
         String answer3 = scanner.next();
         if (answer3.equalsIgnoreCase("b")) {

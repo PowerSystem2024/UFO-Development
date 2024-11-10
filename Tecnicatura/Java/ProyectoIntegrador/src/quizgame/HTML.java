@@ -2,7 +2,7 @@ package quizgame;
 
 import java.util.Scanner;
 
-public class Python {
+public class HTML {
     public void startQuiz() {
         Scanner scanner = new Scanner(System.in);
         int respuestasCorrectas = 0;
@@ -11,14 +11,14 @@ public class Python {
         System.out.print("Ingrese su nombre: ");
         String playerName = scanner.nextLine();
 
-        System.out.println("\nTema: Python - Responde las siguientes preguntas:");
+        System.out.println("\nTema: HTML - Responde las siguientes preguntas:");
 
         // Pregunta 1
-        System.out.println("1. ¿Qué es Python?");
-        System.out.println("a) Un lenguaje de programación");
-        System.out.println("b) Un sistema operativo");
-        System.out.println("c) Un navegador web");
-        System.out.println("d) Un editor de texto");
+        System.out.println("1. ¿Qué significa HTML?");
+        System.out.println("a) Hyper Text Markup Language");
+        System.out.println("b) Home Tool Markup Language");
+        System.out.println("c) Hyperlinks and Text Markup Language");
+        System.out.println("d) Hyper Tool Multi Language");
         System.out.print("Respuesta: ");
         String answer1 = scanner.next();
         if (answer1.equalsIgnoreCase("a")) {
@@ -28,25 +28,25 @@ public class Python {
         }
 
         // Pregunta 2
-        System.out.println("2. ¿Quién creó Python?");
-        System.out.println("a) James Gosling");
-        System.out.println("b) Guido van Rossum");
-        System.out.println("c) Brendan Eich");
-        System.out.println("d) Tim Berners-Lee");
+        System.out.println("2. ¿Cuál es el elemento HTML utilizado para los títulos grandes?");
+        System.out.println("a) <title>");
+        System.out.println("b) <heading>");
+        System.out.println("c) <h1>");
+        System.out.println("d) <head>");
         System.out.print("Respuesta: ");
         String answer2 = scanner.next();
-        if (answer2.equalsIgnoreCase("b")) {
+        if (answer2.equalsIgnoreCase("c")) {
             respuestasCorrectas++;
         } else {
             respuestasIncorrectas++;
         }
 
         // Pregunta 3
-        System.out.println("3. ¿Cuál es la extensión de archivos para Python?");
-        System.out.println("a) .java");
-        System.out.println("b) .py");
-        System.out.println("c) .html");
-        System.out.println("d) .css");
+        System.out.println("3. ¿Qué etiqueta se usa para agregar un enlace en HTML?");
+        System.out.println("a) <link>");
+        System.out.println("b) <a>");
+        System.out.println("c) <href>");
+        System.out.println("d) <anchor>");
         System.out.print("Respuesta: ");
         String answer3 = scanner.next();
         if (answer3.equalsIgnoreCase("b")) {

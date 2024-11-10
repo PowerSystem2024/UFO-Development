@@ -2,7 +2,7 @@ package quizgame;
 
 import java.util.Scanner;
 
-public class Python {
+public class Vue {
     public void startQuiz() {
         Scanner scanner = new Scanner(System.in);
         int respuestasCorrectas = 0;
@@ -11,14 +11,14 @@ public class Python {
         System.out.print("Ingrese su nombre: ");
         String playerName = scanner.nextLine();
 
-        System.out.println("\nTema: Python - Responde las siguientes preguntas:");
+        System.out.println("\nTema: Vue - Responde las siguientes preguntas:");
 
         // Pregunta 1
-        System.out.println("1. ¿Qué es Python?");
-        System.out.println("a) Un lenguaje de programación");
-        System.out.println("b) Un sistema operativo");
-        System.out.println("c) Un navegador web");
-        System.out.println("d) Un editor de texto");
+        System.out.println("1. ¿Quién es el creador de Vue?");
+        System.out.println("a) Evan You");
+        System.out.println("b) Brendan Eich");
+        System.out.println("c) Guido van Rossum");
+        System.out.println("d) Linus Torvalds");
         System.out.print("Respuesta: ");
         String answer1 = scanner.next();
         if (answer1.equalsIgnoreCase("a")) {
@@ -28,28 +28,28 @@ public class Python {
         }
 
         // Pregunta 2
-        System.out.println("2. ¿Quién creó Python?");
-        System.out.println("a) James Gosling");
-        System.out.println("b) Guido van Rossum");
-        System.out.println("c) Brendan Eich");
-        System.out.println("d) Tim Berners-Lee");
+        System.out.println("2. ¿Cuál de las siguientes características es una ventaja de Vue?");
+        System.out.println("a) DOM Virtual");
+        System.out.println("b) Data Binding bidireccional");
+        System.out.println("c) Dependencias modulares");
+        System.out.println("d) Todos los anteriores");
         System.out.print("Respuesta: ");
         String answer2 = scanner.next();
-        if (answer2.equalsIgnoreCase("b")) {
+        if (answer2.equalsIgnoreCase("d")) {
             respuestasCorrectas++;
         } else {
             respuestasIncorrectas++;
         }
 
         // Pregunta 3
-        System.out.println("3. ¿Cuál es la extensión de archivos para Python?");
-        System.out.println("a) .java");
-        System.out.println("b) .py");
-        System.out.println("c) .html");
-        System.out.println("d) .css");
+        System.out.println("3. ¿Qué se utiliza para definir la lógica y el estado en un componente Vue?");
+        System.out.println("a) Metodologías CSS");
+        System.out.println("b) Los mixins");
+        System.out.println("c) El objeto de datos del componente");
+        System.out.println("d) JSX");
         System.out.print("Respuesta: ");
         String answer3 = scanner.next();
-        if (answer3.equalsIgnoreCase("b")) {
+        if (answer3.equalsIgnoreCase("c")) {
             respuestasCorrectas++;
         } else {
             respuestasIncorrectas++;
