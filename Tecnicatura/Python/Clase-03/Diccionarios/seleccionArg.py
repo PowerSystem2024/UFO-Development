@@ -3,6 +3,7 @@
 #estos elementos son los jugadores con: 
 #número de camiseta, nombre, apellido, edad, altura, precio y posición de juego.
 
+print('')
 seleccionArgentina = {
     10: {"Nombre" : "Lionel Messi", "Edad": 35, "Altura" : 1.70, "Precio" : "50 Millones", "Posicion" : "Extremo Derecho"},
     11: {"Nombre" : "Angel Di Maria", "Edad": 34, "Altura" : 1.80, "Precio" : "12 Millones", "Posicion" : "Extremo Derecho"},
@@ -16,15 +17,33 @@ seleccionArgentina = {
     5: {"Nombre" : "Leandro Paredes", "Edad": 30, "Altura" : 1.80, "Precio" : "20 Millones", "Posicion" : "Centrocampista"}
 }
 
+print('Imprimimos el jugador nro 23')
 print(seleccionArgentina[23])
 
+print('')
 for llave, valor in seleccionArgentina.items():
     print(llave, valor)
 
+print('')
 #Chequeamos el tamaño del diccionario
 print("Tenemos cargados en el diccionario la cantidad de jugadores: ", end=" ")
 print(len(seleccionArgentina))
 
+# VAMOS A AGREGAR UN JUGADOR MAS AL EQUIPO ARGENTINO!!!
+
+print('')
+seleccionArgentina[7] = {               # Suele pasar de que me equivoco al querer agregar un nuevo elemento al diccionario con el
+    "Nombre": "Rodrigo De Paul",        # método .add() y los diccionarios en python no tienen un método add
+    "Altura": 29,
+    "Precio": "40 Millones",
+    "Posición": "Centrocampista"
+}
+
+print('')
+# IMPRIMIMOS EL DICCIONARIO CON EL NUEVO JUGADOR DE FUTBOL.
+print(seleccionArgentina)
+
+print('')
 #Como recorrer un diccionario con el ciclo for
 for i in seleccionArgentina:
     print(f"{i} -> {seleccionArgentina[i]}")
