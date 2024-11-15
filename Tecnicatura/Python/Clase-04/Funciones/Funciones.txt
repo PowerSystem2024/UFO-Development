@@ -1,0 +1,96 @@
+En Python, las funciones son bloques de código que realizan una tarea específica.
+ Son muy útiles porque permiten reutilizar el mismo código varias veces sin tener
+ que escribirlo una y otra vez. Aquí te explico los conceptos básicos y cómo crear funciones en Python.
+
+1. ¿Qué es una función?
+Una función es un conjunto de instrucciones agrupadas que realizan una tarea específica.
+En Python, puedes usar funciones predefinidas (como print(), len(), type(), etc.) o definir
+tus propias funciones. Definir funciones personalizadas permite organizar el código y hacerlo más modular.
+
+2. Cómo definir una función en Python
+Para definir una función en Python, se usa la palabra clave def, seguida del nombre de la función y paréntesis ().
+El código de la función se coloca dentro de un bloque indentado.
+
+La sintaxis básica es:
+def nombre_de_funcion():
+    # Bloque de código
+    # que realiza alguna tarea
+
+3. Ejemplo básico de una función sin parámetros
+Esta función simplemente imprime un mensaje:
+
+def saludar():
+    print("¡Hola! Bienvenido a Python.")
+Para llamar a la función y ejecutar su código, simplemente escribe su nombre seguido de paréntesis:
+
+
+saludar()  # Esto imprimirá: ¡Hola! Bienvenido a Python.
+
+4. Funciones con parámetros
+Los parámetros permiten que las funciones acepten valores que se pueden usar dentro de ellas. Esto las hace más flexibles, ya que puedes cambiar su comportamiento según el valor que le pases.
+
+
+def saludar(nombre):
+    print(f"¡Hola, {nombre}! Bienvenido a Python.")
+Aquí, nombre es un parámetro. Cuando llamas a la función, debes proporcionarle un valor:
+
+
+saludar("Ana")  # Esto imprimirá: ¡Hola, Ana! Bienvenido a Python.
+
+5. Funciones con múltiples parámetros
+Puedes pasar varios parámetros a una función separándolos por comas:
+
+def sumar(a, b):
+    resultado = a + b
+    print(f"La suma de {a} y {b} es {resultado}")
+Al llamarla, pasas dos valores:
+
+
+sumar(3, 5)  # Esto imprimirá: La suma de 3 y 5 es 8
+6. Funciones con valores de retorno
+A veces, necesitas que una función devuelva un valor en lugar de solo imprimirlo. Esto se hace con la palabra clave return.
+
+
+def sumar(a, b):
+    return a + b
+Aquí, return permite devolver el resultado de a + b. Ahora puedes almacenar ese resultado en una variable o usarlo directamente:
+
+
+resultado = sumar(3, 5)
+print(resultado)  # Esto imprimirá: 8
+7. Parámetros opcionales (valores predeterminados)
+Puedes definir parámetros opcionales para que, si no se pasa un valor, se use uno predeterminado:
+
+
+def saludar(nombre="invitado"):
+    print(f"¡Hola, {nombre}!")
+Ahora puedes llamar a saludar() sin pasar un argumento, y se usará el valor "invitado":
+
+
+saludar()          # Esto imprimirá: ¡Hola, invitado!
+saludar("Carlos")  # Esto imprimirá: ¡Hola, Carlos!
+8. Funciones anónimas (lambdas)
+Python permite crear funciones pequeñas y rápidas usando la palabra clave lambda. Son útiles cuando necesitas una función simple que se usa una vez.
+
+La sintaxis es:
+
+lambda parámetros: expresión
+Ejemplo:
+doble = lambda x: x * 2
+print(doble(5))  # Esto imprimirá: 10
+
+9. Ejemplo completo
+Ahora veamos un ejemplo de una función que calcula el área de un rectángulo:
+
+def calcular_area_rectangulo(base, altura):
+    return base * altura
+Para calcular el área, llamas a la función pasando la base y la altura:
+
+area = calcular_area_rectangulo(5, 3)
+print(area)  # Esto imprimirá: 15
+
+10. Ventajas de usar funciones
+Reutilización del código: Puedes llamar a la misma función varias veces sin duplicar código.
+Modularidad: El código es más fácil de entender y modificar.
+Organización: Facilita la lectura del código, especialmente en proyectos grandes.
+Las funciones son una de las herramientas más potentes de Python para escribir código limpio, modular y eficiente.
