@@ -10,3 +10,5 @@ mi_funcion()   #Se puede llamar una funcion "N" cantidad de veces
 mi_funcion()
 mi_funcion()
 mi_funcion()
+
+# FUNCIONES EN PYTHON
